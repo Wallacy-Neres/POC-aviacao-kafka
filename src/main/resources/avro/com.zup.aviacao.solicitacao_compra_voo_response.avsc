@@ -1,0 +1,38 @@
+{
+  "namespace": "com.zup.aviacao.solicitacao_cadastro_voo",
+  "type": "record",
+  "name": "SolicitarCompraVooResponse",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "name": "SolicitarCompraVooResponseData",
+        "type": "record",
+        "fields": [
+          {
+            "name": "nomeCliente",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "cpf",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+
+          {
+            "name": "idVoo",
+            "type": [
+              "null","long"
+            ],
+            "default": null
+          }
+        ]
+      }
+    }
+  ]
+}

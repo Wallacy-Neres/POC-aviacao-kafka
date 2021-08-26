@@ -1,0 +1,78 @@
+{
+  "namespace": "com.zup.aviacao.solicitacao_cadastro_voo",
+  "type": "record",
+  "name": "SolicitarCadastroVooRequest",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "name": "SolicitarCadastroVooRequestData",
+        "type": "record",
+        "fields": [
+          {
+            "name": "origem",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "destino",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "portao",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "horaEmbarque",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "fechaPortao",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "dataVoo",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "tempoDuracao",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "valor",
+            "type":["null","string"],
+            "default": null,
+            "java-class": "java.math.BigDecimal"
+          },
+          {
+            "name": "idAeronave",
+            "type": [
+              "null","long"
+            ],
+            "default": null
+          }
+        ]
+      }
+    }
+  ]
+}

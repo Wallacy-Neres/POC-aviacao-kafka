@@ -1,0 +1,41 @@
+{
+  "namespace": "com.zup.aviacao.solicitacao_cadastro_voo",
+  "type": "record",
+  "name": "SolicitarCadastroVooResponse",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "name": "SolicitarCadastroVooResponseData",
+        "type": "record",
+        "fields": [
+          {
+            "name": "origem",
+            "type": ["null","string"],
+            "default": null
+          },
+          {
+            "name": "destino",
+            "type": ["null","string"],
+            "default": null
+          },
+          {
+            "name": "dataVoo",
+            "type": ["null","string"],
+            "default": null
+          },
+          {
+            "name": "tempoDuracao",
+            "type": ["null","string"],
+            "default": null
+          },
+          {
+            "name": "valor",
+            "type": ["null","string"],
+            "default": null
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "namespace": "com.zup.aviacao.solicitacao_cadastro_aeronave",
+  "type": "record",
+  "name": "SolicitarCadastroAeronaveResponse",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "type": "record",
+        "name": "SolicitarCadastroAeronaveResponseData",
+        "fields": [
+          {
+            "name": "marca",
+            "type": [
+              "null",
+              "string"
+            ],
+            "default": null
+          },
+          {
+            "name": "modelo",
+            "type": [
+              "null",
+              "string"
+            ],
+            "default": null
+          },
+          {
+            "name": "AssentosResponse",
+            "type": {
+              "type": "array",
+              "items": {
+                "name": "AssentosListaElementosResponse",
+                "type": "record",
+                "fields": [
+                  {
+                    "name": "numeroAssento",
+                    "type": [
+                      "null",
+                      "string"
+                    ],
+                    "default": null
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

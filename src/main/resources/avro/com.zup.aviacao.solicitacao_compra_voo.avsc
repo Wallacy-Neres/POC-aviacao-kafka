@@ -1,0 +1,78 @@
+{
+  "namespace": "com.zup.aviacao.solicitacao_cadastro_voo",
+  "type": "record",
+  "name": "SolicitarCompraVooRequest",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "name": "SolicitarCompraVooRequestData",
+        "type": "record",
+        "fields": [
+          {
+            "name": "nomeCliente",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "cpf",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "dataNascimento",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "sexo",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "nacionalidade",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "celular",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "email",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "assento",
+            "type":["null","string"],
+            "default": null,
+            "java-class": "java.math.BigDecimal"
+          },
+          {
+            "name": "idVoo",
+            "type": [
+              "null","long"
+            ],
+            "default": null
+          }
+        ]
+      }
+    }
+  ]
+}
