@@ -1,0 +1,30 @@
+{
+  "namespace": "com.zup.aviacao.solicitacao_cadastro_voo",
+  "type": "record",
+  "name": "SolicitarCheckinRequest",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "name": "SolicitarCheckinRequestData",
+        "type": "record",
+        "fields": [
+          {
+            "name": "cpf",
+            "type": [
+              "null","string"
+            ],
+            "default": null
+          },
+          {
+            "name": "idVoo",
+            "type": [
+              "null","long"
+            ],
+            "default": null
+          }
+        ]
+      }
+    }
+  ]
+}

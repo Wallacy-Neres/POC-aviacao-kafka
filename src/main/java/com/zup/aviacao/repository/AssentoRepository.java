@@ -13,4 +13,6 @@ public interface AssentoRepository extends JpaRepository<Assento, Long> {
 
     @Query(value = "SELECT * FROM ASSENTO u WHERE u.ASSENTO = :numero and u.AERONAVE_ASSENTO = :idAeronave", nativeQuery = true)
     Optional<Assento> findByAssentos(@Param("numero") String numero, @Param("idAeronave") Long id);
+
+//    Optional<Assento> findByAssentosAndAeronave(@Param("numero") String numero, @Param("idAeronave") Long id);
 }

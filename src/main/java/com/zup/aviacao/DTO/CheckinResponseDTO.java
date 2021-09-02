@@ -13,6 +13,7 @@ import java.time.LocalTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class CheckinResponseDTO {
 
     private String nome;
